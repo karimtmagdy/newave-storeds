@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer components {
+  button {
+    @apply flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden border font-medium tracking-wide whitespace-nowrap capitalize outline-none focus:outline-none focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&_svg]:shrink-0 [&&_svg]:h-5 [&&_svg]:w-5;
+  }
+  input {
+    @apply block border border-transparent bg-transparent shadow ring-offset-2 ring-offset-white transition-colors duration-300 outline-none focus:outline-none focus-visible:border-zinc-400 focus-visible:ring-1 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
+  }
+  header {
+    @apply flex h-14 items-center justify-center border-b border-zinc-400;
+  }
+  header > div {
+    @apply flex h-full w-full items-center justify-between p-2;
+  }
+  .right-bar {
+    @apply relative flex items-center gap-x-1.5 rounded-xl border border-none bg-fuchsia-500 p-1;
+  }
+  .right-bar > template {
+    @apply absolute top-12 right-0 isolate block h-auto space-y-1 rounded-xl border border-zinc-400 p-2;
+  }
+  .right-bar > template > ul {
+    @apply h-full space-y-1 !overflow-hidden;
+  }
+  .right-bar > template > div {
+    @apply flex h-10 w-full items-center justify-start gap-x-1 !overflow-hidden rounded-lg border border-zinc-400 p-1 select-none;
+  }
+  .right-bar > template > ul > li > a {
+    @apply flex h-8 items-center gap-x-2 rounded-lg border border-zinc-300 px-2 py-0.5 text-sm font-medium tracking-wide text-black capitalize transition duration-200 outline-none hover:border-zinc-100 hover:bg-zinc-100 hover:text-zinc-600 [&_svg]:shrink-0 [&&_svg]:h-4 [&&_svg]:w-4 [&&_svg]:text-current;
+  }
+  .logo {
+    @apply flex items-center overflow-hidden;
+  }
+  .logo-svg {
+    @apply h-9 w-9 shrink-0 select-none;
+  }
+  .logo > span {
+    @apply text-lg;
+  }
+  .user-menu-inormation {
+    @apply relative flex items-center justify-start overflow-hidden *:truncate *:lowercase;
+  }
+  .user-menu-inormation > .user-avatar {
+    @apply h-7 w-7 overflow-hidden rounded-md border border-zinc-400;
+  }
+  .user-menu-inormation > .user-title {
+    @apply flex flex-col leading-none;
+  }
+  /* .user-menu-inormation > .user-title > strong {
+    @apply;
+  }
+  .user-menu-inormation > .user-title > small {
+    @apply;
+  } */
+  .user-menu-inormation > span {
+    @apply absolute top-2 right-1 size-2 translate-x-[-50%] translate-y-[-50%] rounded-full bg-green-300;
+  }
+  .authentication-form-page {
+    @apply flex h-dvh flex-col items-center justify-center p-4;
+  }
+  .authentication-form-page > form {
+    @apply flex h-full w-full flex-col justify-center space-y-1 gap-y-4 rounded-lg border border-zinc-400 p-4 sm:w-1/2 sm:min-w-fit md:w-2/3 lg:w-1/2 xl:w-3/6 2xl:w-2/5;
+  }
+}
+/* sm:bg-red-600 md:bg-blue-600 lg:bg-green-600 xl:bg-amber-500 2xl:bg-fuchsia-600 */

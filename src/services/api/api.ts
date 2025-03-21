@@ -1,0 +1,16 @@
+export const SIGNUPAPI = "/auth/sign-up";
+export const SIGNINAPI = "/auth/sign-in";
+export const REFRESHAPI = "/auth/refresh";
+export const SIGNOUTAPI = "/auth/sign-out";
+export const RESETPASSWORDAPI = "/auth/reset-password/:token";
+export const USERSAPI = "/users";
+export const CATEGORIESAPI = "/categories";
+export const PRODUCTSAPI = "/products";
+export const BRANDSAPI = "/brands";
+export const ORDERSAPI = "/orders";
+export const CARTAPI = "/cart";
+// export const SETUP2FA = "/auth/2fa/setup";
+// export const RESET2FAAPI = "/auth/2fa/reset";
+// export const VERIFY2FAAPI = "/auth/2fa/verify";
+// export const API='/api/v1/'
+// export const =''
