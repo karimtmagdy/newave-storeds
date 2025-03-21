@@ -1,5 +1,5 @@
 {
-  "name": "newave-store",
+  "name": "newave-stored",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -51,6 +51,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/karimtmagdy/newave-store.git"
+    "url": "https://github.com/karimtmagdy/newave-stored.git"
   }
 }
